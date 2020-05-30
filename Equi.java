@@ -14,8 +14,14 @@ class Equi {
     public static void main(String args[] ) throws Exception {
         
         Scanner s = new Scanner(System.in);
-        int a=s.nextInt();
-        int n=s.nextInt();
+        int a=0;
+        if (s.hasNext()){
+            a=s.nextInt();
+        }
+        int n=0;
+        if (s.hasNext()){
+            n=s.nextInt();
+        }
         //while(n!=0){
         if(a%3==0){
             System.out.println("YES");
@@ -23,8 +29,6 @@ class Equi {
         else{
             System.out.println("NO");
         //}n--;
-    }
-
-
+        }
     }
 } 
